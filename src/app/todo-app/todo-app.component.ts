@@ -19,8 +19,7 @@ export class TodoAppComponent {
 	constructor(private todoService: TodoService) {}
 
 	ngOnInit() {
-	debugger;
-		
+
 	}
 
 	addTodo() {

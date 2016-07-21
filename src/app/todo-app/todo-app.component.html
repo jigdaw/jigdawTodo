@@ -8,6 +8,6 @@
 	</label>
 
 	<ul class="todo-list" *ngIf="todos.length > 0">
-		<memo *ngFor="let todo of todos" [todo]="todo"></memo>
+		<li *ngFor="let todo of todos" memo [todo]="todo" [class.completed]="todo.complete"></li>
 	</ul>
 </section>

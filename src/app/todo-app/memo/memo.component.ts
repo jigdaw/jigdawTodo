@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
-
+import { Todo } from '../../todo'
 @Component({
-  selector: 'app-memo',
-  templateUrl: './src/app/todo-app/memo/memo.component.html',
-  styleUrls: ['./src/app/todo-app/memo/memo.component.css']
+  moduleId: module.id,
+  inputs: ['todo'],
+  selector: '[memo]',
+  templateUrl: 'memo.component.html',
+  styleUrls: ['memo.component.css']
 })
 export class MemoComponent {
-
+  todo: Todo
   constructor() {}
 
   ngOnInit() {
