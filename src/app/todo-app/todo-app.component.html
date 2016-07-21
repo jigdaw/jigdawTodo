@@ -8,15 +8,6 @@
 	</label>
 
 	<ul class="todo-list" *ngIf="todos.length > 0">
-		<li *ngFor="let todo of todos" [class.completed]="todo.complete">
-			<label class="option">
-				<input type="checkbox" [checked]="todo.complete" (click)="toggleTodoComplete(todo)">
-				<span>
-					<i class="fa fa-check"></i>
-				</span>
-				<p>{{todo.title}}</p>
-			</label>
-			<i class="fa fa-times" (click)="removeTodo(todo)"></i>
-		</li>
+		<memo *ngFor="let todo of todos" [todo]="todo"></memo>
 	</ul>
 </section>
